@@ -211,19 +211,15 @@
 
                                 <div class="card">
                                     <div class="card-header container-fluid">
-                                      <div class="row">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3 class="card-title pt-2">Actualizar egresados</h3>
+                                            </div>
 
-                                        <div class="col">
-                                          <h3 class="card-title pt-2">Actualizar egresados</h3>
+                                            <div class="col-1">
+                                                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#modalNuevo">Crear</button>
+                                            </div>
                                         </div>
-
-                                        <div class="col-1">
-                                          <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#modalNuevo">
-                                            Crear
-                                          </button>
-                                        </div>
-
-                                      </div>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
@@ -241,13 +237,13 @@
                                                     <td>persona 1</td>
                                                     <td>programa</td>
                                                     <td>
-                                                      <button type="button" class="btn btn-primary" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-pen"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                            <i class="nav-icon fas fa-pen"></i>
+                                                        </button>
 
-                                                      <button type="button" class="btn btn-danger" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-trash"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                            <i class="nav-icon fas fa-trash"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
 
@@ -255,13 +251,13 @@
                                                     <td>persona 2</td>
                                                     <td>programa</td>
                                                     <td>
-                                                      <button type="button" class="btn btn-primary" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-pen"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                            <i class="nav-icon fas fa-pen"></i>
+                                                        </button>
 
-                                                      <button type="button" class="btn btn-danger" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-trash"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                            <i class="nav-icon fas fa-trash"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
 
@@ -269,13 +265,13 @@
                                                     <td>persona 3</td>
                                                     <td>programa</td>
                                                     <td>
-                                                      <button type="button" class="btn btn-primary" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-pen"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                            <i class="nav-icon fas fa-pen"></i>
+                                                        </button>
 
-                                                      <button type="button" class="btn btn-danger" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-trash"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                            <i class="nav-icon fas fa-trash"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
 
@@ -283,12 +279,12 @@
                                                     <td>persona 4</td>
                                                     <td>programa</td>
                                                     <td>
-                                                      <button type="button" class="btn btn-primary" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-pen"></i>
-                                                      </button>
-                                                      <button type="button" class="btn btn-danger" data-toggle="modal">
-                                                        <i class="nav-icon fas fa-trash"></i>
-                                                      </button>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                            <i class="nav-icon fas fa-pen"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                            <i class="nav-icon fas fa-trash"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -321,25 +317,100 @@
         </div>
         <!-- ./wrapper -->
 
+        <!-- ModalCrear -->
         <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Actualizar Egresado</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Actualizar Egresado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="programaControlSelect">Programa Acad&eacute;mico</label>
+                                    <select class="form-control" id="programaControlSelect">
+                                        <option selected>Seleccione</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col">
+                                    <label for="nameInput">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre completo" />
+                                </div>
+
+                                <div class="form-group col">
+                                    <label for="inputEmail">Correo</label>
+                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Correo" />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="projectNameInput">Nombre del proyecto</label>
+                                    <input type="text" class="form-control" placeholder="Nombre proyecto" />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="exampleFormControlTextarea1">Descripci&oacute;n</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Descripci&oacute;n"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="studentImageFile">Foto alumno</label>
+                                    <input type="file" class="form-control-file" id="studentImageFile" />
+                                </div>
+
+                                <div class="form-group col offset-3">
+                                    <label for="projectImageFile">Imagen proyecto</label>
+                                    <input type="file" class="form-control-file" id="projectImageFile" />
+                                </div>
+                            </div>
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+        <!-- /ModalCrear -->
+
+        <!-- ModalDelete -->
+        <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Est&aacute; seguro de eliminar al egresado</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /ModalDelete -->
 
         <!-- jQuery -->
         <script src="../../plugins/jquery/jquery.min.js"></script>
