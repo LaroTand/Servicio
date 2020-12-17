@@ -237,7 +237,7 @@
                                                     <td>persona 1</td>
                                                     <td>programa</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
 
@@ -251,7 +251,7 @@
                                                     <td>persona 2</td>
                                                     <td>programa</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
 
@@ -265,7 +265,7 @@
                                                     <td>persona 3</td>
                                                     <td>programa</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
 
@@ -279,7 +279,7 @@
                                                     <td>persona 4</td>
                                                     <td>programa</td>
                                                     <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
                                                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
@@ -371,11 +371,17 @@
                             <div class="form-row">
                                 <div class="form-group col">
                                     <label for="studentImageFile">Foto alumno</label>
+                                    <figure>
+                                        <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100px" />
+                                    </figure>
                                     <input type="file" class="form-control-file" id="studentImageFile" />
                                 </div>
 
                                 <div class="form-group col offset-3">
                                     <label for="projectImageFile">Imagen proyecto</label>
+                                    <figure>
+                                        <img id="projectImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100px" />
+                                    </figure>
                                     <input type="file" class="form-control-file" id="projectImageFile" />
                                 </div>
                             </div>
@@ -441,6 +447,24 @@
                     autoWidth: false,
                     responsive: true,
                 });
+            });
+        </script>
+        <!-- Script para mostrar previsualizacion de imagen-->
+        <script>
+            $(document).on("change", "#studentImageFile", function () {
+                console.log(this.files);
+                var files = this.files;
+
+                var imgCodified = URL.createObjectURL(files[0]);
+                $("#studentImage").attr("src", imgCodified);
+            });
+
+            $(document).on("change", "#projectImageFile", function () {
+                console.log(this.files);
+                var files = this.files;
+
+                var imgCodified = URL.createObjectURL(files[0]);
+                $("#projectImage").attr("src", imgCodified);
             });
         </script>
     </body>
