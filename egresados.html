@@ -223,7 +223,7 @@
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
-                                        <table id="example1" class="table table-bordered table-striped">
+                                        <table id="tabla" class="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>Nombre</th>
@@ -372,17 +372,23 @@
                                 <div class="form-group col">
                                     <label for="studentImageFile">Foto alumno</label>
                                     <figure>
-                                        <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100px" />
+                                        <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
                                     </figure>
-                                    <input type="file" class="form-control-file" id="studentImageFile" />
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="studentImageFile" />
+                                        <label class="custom-file-label" for="studentImageFile">Seleccionar archivo</label>
+                                    </div>
                                 </div>
 
                                 <div class="form-group col offset-3">
                                     <label for="projectImageFile">Imagen proyecto</label>
                                     <figure>
-                                        <img id="projectImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100px" />
+                                        <img id="projectImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
                                     </figure>
-                                    <input type="file" class="form-control-file" id="projectImageFile" />
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="projectImageFile" />
+                                        <label class="custom-file-label" for="projectImageFile">Seleccionar archivo</label>
+                                    </div>
                                 </div>
                             </div>
                             <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
@@ -465,6 +471,16 @@
 
                 var imgCodified = URL.createObjectURL(files[0]);
                 $("#projectImage").attr("src", imgCodified);
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#tabla").DataTable({
+                    language: {
+                        url: "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json",
+                    },
+                });
             });
         </script>
     </body>
