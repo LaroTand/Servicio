@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Egresados</title>
+        <title>Logros</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -119,14 +119,14 @@
                             </li>
 
                             <li class="nav-item" id="link4">
-                                <a href="#" class="nav-link">
+                                <a href="./practicas.html" class="nav-link">
                                     <i class="nav-icon fas fa-laptop-code"></i>
                                     <p>Pr&aacute;cticas</p>
                                 </a>
                             </li>
 
                             <li class="nav-item" id="link2">
-                                <a href="#" class="nav-link">
+                                <a href="./visitas.html" class="nav-link">
                                     <i class="nav-icon fas fa-eye"></i>
                                     <p>Visitas</p>
                                 </a>
@@ -189,12 +189,12 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1>Alta de alumnos egresados</h1>
+                                <h1>Logros</h1>
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active">Alta de alumnos egresados</li>
+                                    <li class="breadcrumb-item active">Logros</li>
                                 </ol>
                             </div>
                         </div>
@@ -210,82 +210,50 @@
                                 <!-- /.card -->
 
                                 <div class="card">
-                                    <div class="card-header container-fluid">
+                                    <!-- <div class="card-header container-fluid">
                                         <div class="row">
                                             <div class="col">
                                                 <h3 class="card-title pt-2">Actualizar egresados</h3>
                                             </div>
 
-                                            <div class="col-2">
-                                                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#modalNuevo">Nuevo Alumnos</button>
-                                            </div>
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nuevo Alumnos</button>
                                         </div>
-                                    </div>
+                                    </div> -->
+
                                     <!-- /.card-header -->
                                     <div class="card-body">
                                         <table id="tabla" class="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Nombre</th>
+                                                    <th>Campos</th>
+                                                    <th>Descripci&oacute;n</th>
                                                     <th>Programa Acad&eacute;mico</th>
-                                                    <th>Acciones</th>
                                                 </tr>
                                             </thead>
 
                                             <tbody>
                                                 <tr>
-                                                    <td>persona 1</td>
+                                                    <td>campo</td>
+                                                    <td>descripci&oacute;n</td>
                                                     <td>programa</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                                                            <i class="nav-icon fas fa-pen"></i>
-                                                        </button>
-
-                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                            <i class="nav-icon fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>persona 2</td>
+                                                    <td>campo</td>
+                                                    <td>descripci&oacute;n</td>
                                                     <td>programa</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                                                            <i class="nav-icon fas fa-pen"></i>
-                                                        </button>
-
-                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                            <i class="nav-icon fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>persona 3</td>
+                                                    <td>campo</td>
+                                                    <td>descripci&oacute;n</td>
                                                     <td>programa</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                                                            <i class="nav-icon fas fa-pen"></i>
-                                                        </button>
-
-                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                            <i class="nav-icon fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>persona 4</td>
+                                                    <td>campo</td>
+                                                    <td>descripci&oacute;n</td>
                                                     <td>programa</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                                                            <i class="nav-icon fas fa-pen"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                            <i class="nav-icon fas fa-trash"></i>
-                                                        </button>
-                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -316,113 +284,6 @@
             <!-- /.control-sidebar -->
         </div>
         <!-- ./wrapper -->
-
-        <!-- ModalCrear -->
-        <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Actualizar Egresado</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col">
-                                    <label for="programaControlSelect">Programa Acad&eacute;mico</label>
-                                    <select class="form-control" id="programaControlSelect">
-                                        <option selected>Seleccione</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group col">
-                                    <label for="nameInput">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre completo" />
-                                </div>
-
-                                <div class="form-group col">
-                                    <label for="inputEmail">Correo</label>
-                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Correo" />
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label for="projectNameInput">Nombre del proyecto</label>
-                                    <input type="text" class="form-control" placeholder="Nombre proyecto" />
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label for="exampleFormControlTextarea1">Descripci&oacute;n</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Descripci&oacute;n"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col">
-                                    <label for="studentImageFile">Foto alumno</label>
-                                    <figure>
-                                        <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
-                                    </figure>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="studentImageFile" />
-                                        <label class="custom-file-label" for="studentImageFile">Seleccionar archivo</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-group col offset-3">
-                                    <label for="projectImageFile">Imagen proyecto</label>
-                                    <figure>
-                                        <img id="projectImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
-                                    </figure>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="projectImageFile" />
-                                        <label class="custom-file-label" for="projectImageFile">Seleccionar archivo</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                        </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-success">Guardar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /ModalCrear -->
-
-        <!-- ModalDelete -->
-        <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Est&aacute; seguro de eliminar al egresado</div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-danger">Eliminar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /ModalDelete -->
 
         <!-- jQuery -->
         <script src="./plugins/jquery/jquery.min.js"></script>
@@ -455,30 +316,23 @@
                 });
             });
         </script>
-        <!-- Script para mostrar previsualizacion de imagen-->
-        <script>
-            $(document).on("change", "#studentImageFile", function () {
-                console.log(this.files);
-                var files = this.files;
-
-                var imgCodified = URL.createObjectURL(files[0]);
-                $("#studentImage").attr("src", imgCodified);
-            });
-
-            $(document).on("change", "#projectImageFile", function () {
-                console.log(this.files);
-                var files = this.files;
-
-                var imgCodified = URL.createObjectURL(files[0]);
-                $("#projectImage").attr("src", imgCodified);
-            });
-        </script>
 
         <script>
             $(document).ready(function () {
                 $("#tabla").DataTable({
                     language: {
-                        url: "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json",
+                        lengthMenu: "Mostrar _MENU_ registros",
+                        zeroRecords: "No se encontraron los resultados",
+                        info: "Mostrando página _PAGE_ de _PAGES_",
+                        infoEmpty: "No hay registros disponibles",
+                        infoFiltered: "(filtrado de _MAX_ total registros)",
+                        search: "Buscar:",
+                        paginate: {
+                            first: "Primero",
+                            last: "Ultimo",
+                            next: "Siguiente",
+                            previous: "Anterior",
+                        },
                     },
                 });
             });
