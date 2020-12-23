@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Logros</title>
+        <title>Generaciones</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -88,7 +88,7 @@
                             </li>
 
                             <li class="nav-item" id="link3">
-                                <a href="#" class="nav-link active">
+                                <a href="./logros.html" class="nav-link">
                                     <i class="nav-icon fas fa-award"></i>
                                     <p>Logros</p>
                                 </a>
@@ -116,7 +116,7 @@
                             </li>
 
                             <li class="nav-item" id="link2">
-                                <a href="./generaciones.html" class="nav-link">
+                                <a href="#" class="nav-link active">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>Generaciones</p>
                                 </a>
@@ -158,12 +158,12 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1>Logros</h1>
+                                <h1>Generaciones</h1>
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active">Logros</li>
+                                    <li class="breadcrumb-item active">Generaciones</li>
                                 </ol>
                             </div>
                         </div>
@@ -182,10 +182,10 @@
                                     <div class="card-header container-fluid">
                                         <div class="row">
                                             <div class="col">
-                                                <h3 class="card-title pt-2">Alta de logros acad&eacute;micos</h3>
+                                                <h3 class="card-title pt-2">Alta de Generaciones</h3>
                                             </div>
 
-                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nuevo Logro</button>
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nueva Generaci&oacute;n</button>
                                         </div>
                                     </div>
                                     <!-- /.card-header -->
@@ -194,8 +194,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>Programa Acad&eacute;mico</th>
-                                                    <th>Logro</th>
-                                                    <th>Descripci&oacute;n</th>
+                                                    <th>Generaci&oacute;n</th>
                                                     <th>Acciones</th>
                                                 </tr>
                                             </thead>
@@ -203,9 +202,11 @@
                                             <tbody>
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 1</td>
-                                                    <td>Desc.</td>
+                                                    <td>Generaci&oacute;n 1</td>
                                                     <td>
+                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                                                            <i class="nav-icon fas fa-user-plus"></i>
+                                                        </button>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
@@ -218,9 +219,11 @@
 
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 2</td>
-                                                    <td>Desc.</td>
+                                                    <td>Generaci&oacute;n 2</td>
                                                     <td>
+                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                                                            <i class="nav-icon fas fa-user-plus"></i>
+                                                        </button>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
@@ -233,9 +236,11 @@
 
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 3</td>
-                                                    <td>Desc.</td>
+                                                    <td>Generaci&oacute;n 3</td>
                                                     <td>
+                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                                                            <i class="nav-icon fas fa-user-plus"></i>
+                                                        </button>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
@@ -248,9 +253,11 @@
 
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 4</td>
-                                                    <td>Desc.</td>
+                                                    <td>Generaci&oacute;n 4</td>
                                                     <td>
+                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                                                            <i class="nav-icon fas fa-user-plus"></i>
+                                                        </button>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
                                                         </button>
@@ -294,7 +301,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Actualizar logro acad&eacute;mico</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Actualizar Generaci&oacute;n</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -318,27 +325,20 @@
 
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <label for="projectNameInput">T&iacute;tulo</label>
-                                    <input type="text" class="form-control" placeholder="T&iacute;tulo logro" />
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label for="exampleFormControlTextarea1">Descripci&oacute;n</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Descripci&oacute;n"></textarea>
+                                    <label for="projectNameInput">Semestre</label>
+                                    <input type="text" class="form-control" placeholder="Formato aaaa-s" />
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-6">
-                                    <label for="logroImageFile">Imagen</label>
+                                    <label for="generacionImageFile">Foto generaci&oacute;n</label>
                                     <figure>
                                         <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
                                     </figure>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="logroImageFile" />
-                                        <label class="custom-file-label" for="logroImageFile">Seleccionar archivo</label>
+                                        <input type="file" class="custom-file-input" id="generacionImageFile" />
+                                        <label class="custom-file-label" for="generacionImageFile">Seleccionar archivo</label>
                                     </div>
                                 </div>
                             </div>
@@ -355,17 +355,124 @@
         </div>
         <!-- /ModalCrear -->
 
+        <!-- ModalGeneracion -->
+        <div class="modal fade" id="modalGeneracion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><strong>Generaci&oacute;n # de #</strong></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <section class="content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- /.card -->
+
+                                        <div class="card">
+                                            <div class="card-header container-fluid">
+                                                <div class="row">
+                                                    <form class="col-12">
+                                                        <div class="form-row">
+                                                            <label for="projectNameInput" class="col-12">Nombre</label>
+                                                            <div class="form-group col">
+                                                                <input type="text" class="form-control" placeholder="Digite el nombre completo" />
+                                                            </div>
+                                                            <button class="btn btn-warning mb-3">Agregar</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                                <table id="tabla" class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre</th>
+                                                            <th>Acciones</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Programa</td>
+                                                            <td>
+
+                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                                    <i class="nav-icon fas fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Programa</td>
+                                                            <td>
+
+                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                                    <i class="nav-icon fas fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Programa</td>
+                                                            <td>
+
+                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                                    <i class="nav-icon fas fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Programa</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                                                                    <i class="nav-icon fas fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /ModalGeneracion -->
+
         <!-- ModalDelete -->
         <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Eliminar logro acad&eacute;mico</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminar Generaci&oacute;n</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">¿Est&aacute; seguro de eliminar el logro acad&eacute;mico?</div>
+                    <div class="modal-body">¿Est&aacute; seguro de eliminar la Generaci&oacute;n?</div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn btn-danger">Eliminar</button>
@@ -410,7 +517,7 @@
 
         <!-- Script para mostrar previsualizacion de imagen-->
         <script>
-            $(document).on("change", "#logroImageFile", function () {
+            $(document).on("change", "#generacionImageFile", function () {
                 console.log(this.files);
                 var files = this.files;
 
