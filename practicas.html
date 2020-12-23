@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Logros</title>
+        <title>Pr&aacute;cticas y Visitas</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -87,14 +87,14 @@
                             </li>
 
                             <li class="nav-item" id="link3">
-                                <a href="#" class="nav-link active">
+                                <a href="./logros.html" class="nav-link">
                                     <i class="nav-icon fas fa-award"></i>
                                     <p>Logros</p>
                                 </a>
                             </li>
 
                             <li class="nav-item" id="link4">
-                                <a href="./practicas.html" class="nav-link">
+                                <a href="#" class="nav-link active">
                                     <i class="nav-icon fas fa-laptop-code"></i>
                                     <p>Pr&aacute;cticas y Visitas</p>
                                 </a>
@@ -157,12 +157,12 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1>Logros</h1>
+                                <h1>Pr&aacute;cticas y Visitas Escolares</h1>
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active">Logros</li>
+                                    <li class="breadcrumb-item active">Pr&aacute;cticas y Visitas</li>
                                 </ol>
                             </div>
                         </div>
@@ -181,10 +181,10 @@
                                     <div class="card-header container-fluid">
                                         <div class="row">
                                             <div class="col">
-                                                <h3 class="card-title pt-2">Alta de logros acad&eacute;micos</h3>
+                                                <h3 class="card-title pt-2">Alta de pr&aacute;cticas y visitas escolares</h3>
                                             </div>
 
-                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nuevo Logro</button>
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nuevo registro</button>
                                         </div>
                                     </div>
                                     <!-- /.card-header -->
@@ -193,8 +193,8 @@
                                             <thead>
                                                 <tr>
                                                     <th>Programa Acad&eacute;mico</th>
-                                                    <th>Logro</th>
-                                                    <th>Descripci&oacute;n</th>
+                                                    <th>Tipo</th>
+                                                    <th>Nombre</th>
                                                     <th>Acciones</th>
                                                 </tr>
                                             </thead>
@@ -202,8 +202,8 @@
                                             <tbody>
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 1</td>
-                                                    <td>Desc.</td>
+                                                    <td>Tipo</td>
+                                                    <td>Nombre</td>
                                                     <td>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
@@ -217,8 +217,8 @@
 
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 2</td>
-                                                    <td>Desc.</td>
+                                                    <td>Tipo</td>
+                                                    <td>Nombre</td>
                                                     <td>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
@@ -232,8 +232,8 @@
 
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 3</td>
-                                                    <td>Desc.</td>
+                                                    <td>Tipo</td>
+                                                    <td>Nombre</td>
                                                     <td>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
@@ -247,8 +247,8 @@
 
                                                 <tr>
                                                     <td>Programa</td>
-                                                    <td>Logro 4</td>
-                                                    <td>Desc.</td>
+                                                    <td>Tipo</td>
+                                                    <td>Nombre</td>
                                                     <td>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
                                                             <i class="nav-icon fas fa-pen"></i>
@@ -293,7 +293,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Actualizar logro acad&eacute;mico</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Actualizar Pr&aacute;ctica o Visita</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -314,12 +314,24 @@
                                     </select>
                                 </div>
 
+                                <div class="form-group col-4 offset-2">
+                                    <label for="programaControlSelect">Tipo</label>
+                                    <select class="form-control" id="programaControlSelect">
+                                        <option selected>Seleccione</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
                                 
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <label for="projectNameInput">T&iacute;tulo</label>
+                                    <label for="projectNameInput">Nombre</label>
                                     <input type="text" class="form-control" placeholder="Nombre proyecto" />
                                 </div>
                             </div>
@@ -333,13 +345,13 @@
 
                             <div class="form-row">
                                 <div class="form-group col-6">
-                                    <label for="logroImageFile">Imagen</label>
+                                    <label for="visitaImageFile">Imagen</label>
                                     <figure>
                                         <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
                                     </figure>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="logroImageFile" />
-                                        <label class="custom-file-label" for="logroImageFile">Seleccionar archivo</label>
+                                        <input type="file" class="custom-file-input" id="visitaImageFile" />
+                                        <label class="custom-file-label" for="visitaImageFile">Seleccionar archivo</label>
                                     </div>
                                 </div>
                             </div>
@@ -361,12 +373,12 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Eliminar logro acad&eacute;mico</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminar pr&aacute;ctica o visita</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">¿Est&aacute; seguro de eliminar el logro acad&eacute;mico?</div>
+                    <div class="modal-body">¿Est&aacute; seguro de eliminar la pr&aacute;ctica o visita?</div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn btn-danger">Eliminar</button>
@@ -390,7 +402,7 @@
         <!-- AdminLTE for demo purposes -->
         <script src="./dist/js/demo.js"></script>
         <!-- page script -->
-
+        
         <!-- <script>
             $(function () {
                 $("#example1").DataTable({
@@ -411,7 +423,7 @@
         
         <!-- Script para mostrar previsualizacion de imagen-->
         <script>
-            $(document).on("change", "#logroImageFile", function () {
+            $(document).on("change", "#visitaImageFile", function () {
                 console.log(this.files);
                 var files = this.files;
 
