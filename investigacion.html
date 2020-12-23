@@ -96,14 +96,7 @@
                             <li class="nav-item" id="link4">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-laptop-code"></i>
-                                    <p>Pr&aacute;cticas</p>
-                                </a>
-                            </li>
-
-                            <li class="nav-item" id="link2">
-                                <a href="./visitas.html" class="nav-link">
-                                    <i class="nav-icon fas fa-eye"></i>
-                                    <p>Visitas</p>
+                                    <p>Pr&aacute;cticas y Visitas</p>
                                 </a>
                             </li>
 
@@ -300,7 +293,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Actualizar logro acad&eacute;mico</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Actualizar investigaci&oacute;n</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -321,34 +314,61 @@
                                     </select>
                                 </div>
 
+                                <div class="form-group col-4 offset-2">
+                                    <label for="programaControlSelect">Tipo</label>
+                                    <select class="form-control" id="programaControlSelect">
+                                        <option selected>Seleccione</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
                                 
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <label for="projectNameInput">T&iacute;tulo</label>
-                                    <input type="text" class="form-control" placeholder="Nombre proyecto" />
+                                    <label for="projectNameInput">T&iacute;tulo del proyecto</label>
+                                    <input type="text" class="form-control" placeholder="T&iacute;tulo proyecto" />
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label for="exampleFormControlTextarea1">Descripci&oacute;n</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Descripci&oacute;n"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripci&oacute;n"></textarea>
                                 </div>
                             </div>
 
                             <div class="form-row">
+
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label for="alumnosTextarea">Alumnos</label>
+                                        <textarea class="form-control" id="alumnosTextarea" rows="5" placeholder="Escriba aqu&iacute;"></textarea>
+                                    </div>
+    
+                                    <div class="form-group col-12 mt-3">
+                                        <label for="directoresTextarea">Directores</label>
+                                        <textarea class="form-control" id="directoresTextarea" rows="5" placeholder="Escriba aqu&iacute;"></textarea>
+                                    </div>
+                                </div>
+
                                 <div class="form-group col-6">
-                                    <label for="logroImageFile">Imagen</label>
+                                    <label for="investigacionImageFile">Imagen</label>
                                     <figure>
                                         <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
                                     </figure>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="logroImageFile" />
-                                        <label class="custom-file-label" for="logroImageFile">Seleccionar archivo</label>
+                                        <input type="file" class="custom-file-input" id="investigacionImageFile" />
+                                        <label class="custom-file-label" for="investigacionImageFile">Seleccionar archivo</label>
                                     </div>
                                 </div>
+
+                                
                             </div>
                             <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         </form>
@@ -368,12 +388,12 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Eliminar logro acad&eacute;mico</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminar investigaci&oacute;n</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">¿Est&aacute; seguro de eliminar el logro acad&eacute;mico?</div>
+                    <div class="modal-body">¿Est&aacute; seguro de eliminar la investigaci&oacute;n?</div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn btn-danger">Eliminar</button>
@@ -418,7 +438,7 @@
         
         <!-- Script para mostrar previsualizacion de imagen-->
         <script>
-            $(document).on("change", "#logroImageFile", function () {
+            $(document).on("change", "#investigacionImageFile", function () {
                 console.log(this.files);
                 var files = this.files;
 
