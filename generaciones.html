@@ -190,7 +190,7 @@
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
-                                        <table id="tabla" class="table table-bordered table-striped">
+                                        <table id="tabla_1" class="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>Programa Acad&eacute;mico</th>
@@ -268,15 +268,20 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        
                                     </div>
                                     <!-- /.card-body -->
+
+                                    
                                 </div>
+
                                 <!-- /.card -->
                             </div>
                             <!-- /.col -->
                         </div>
                         <!-- /.row -->
                     </div>
+
                     <!-- /.container-fluid -->
                 </section>
                 <!-- /.content -->
@@ -367,90 +372,75 @@
                     </div>
 
                     <div class="modal-body">
-                        <section class="content">
-                            <div class="container-fluid">
+                        <div class="card">
+                            <div class="card-header container-fluid">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <!-- /.card -->
-
-                                        <div class="card">
-                                            <div class="card-header container-fluid">
-                                                <div class="row">
-                                                    <form class="col-12">
-                                                        <div class="form-row">
-                                                            <label for="projectNameInput" class="col-12">Nombre</label>
-                                                            <div class="form-group col">
-                                                                <input type="text" class="form-control" placeholder="Digite el nombre completo" />
-                                                            </div>
-                                                            <button class="btn btn-warning mb-3">Agregar</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
+                                    <form class="col-12">
+                                        <div class="form-row">
+                                            <label for="projectNameInput" class="col-12">Nombre</label>
+                                            <div class="form-group col">
+                                                <input type="text" class="form-control" placeholder="Digite el nombre completo" />
                                             </div>
-
-                                            
-                                            <!-- /.card-header -->
-                                            <div class="card-body">
-                                                <table id="tabla" class="table table-bordered table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Nombre</th>
-                                                            <th>Acciones</th>
-                                                        </tr>
-                                                    </thead>
-
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Programa</td>
-                                                            <td>
-
-                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                                    <i class="nav-icon fas fa-trash"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Programa</td>
-                                                            <td>
-
-                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                                    <i class="nav-icon fas fa-trash"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Programa</td>
-                                                            <td>
-
-                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                                    <i class="nav-icon fas fa-trash"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Programa</td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                                                                    <i class="nav-icon fas fa-trash"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- /.card-body -->
+                                            <button class="btn btn-warning mb-3">Agregar</button>
                                         </div>
-                                        <!-- /.card -->
-                                    </div>
-                                    <!-- /.col -->
+                                    </form>
                                 </div>
-                                <!-- /.row -->
                             </div>
-                            <!-- /.container-fluid -->
-                        </section>
+
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table id="tabla_2" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Nombre</td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <i class="nav-icon fas fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nombre</td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <i class="nav-icon fas fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nombre</td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <i class="nav-icon fas fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nombre</td>
+                                            <td>
+                                                <a href="#" class="btn btn-danger">
+                                                    <i class="nav-icon fas fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            <!-- /.card-body -->
+
+                            
+                        </div>
                     </div>
 
                     <div class="modal-footer">
@@ -529,7 +519,7 @@
         <!-- Script para cambiar el idioma al DataTable-->
         <script>
             $(document).ready(function () {
-                $("#tabla").DataTable({
+                $("#tabla_1, #tabla_2").DataTable({
                     language: {
                         lengthMenu: "Mostrar _MENU_ registros",
                         zeroRecords: "No se encontraron los resultados",
