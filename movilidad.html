@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Generaciones</title>
+    <title>Movilidad</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="./dist/css/adminlte.min.css" />
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet" />
+
+    <style>
+      .carousel-control-next,.carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(100%);
+      }
+    </style>
+    
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -112,14 +119,14 @@
               </li>
 
               <li class="nav-item" id="link2">
-                <a href="./movilidad.html" class="nav-link">
+                <a href="#" class="nav-link active">
                   <i class="nav-icon fas fa-shuttle-van"></i>
                   <p>Movilidad</p>
                 </a>
               </li>
 
               <li class="nav-item" id="link2">
-                <a href="#" class="nav-link active">
+                <a href="./generaciones.html" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>Generaciones</p>
                 </a>
@@ -161,12 +168,12 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Generaciones</h1>
+                <h1>Movilidad Acad&eacute;mica</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Generaciones</li>
+                  <li class="breadcrumb-item active">Movilidad Acad&eacute;mica</li>
                 </ol>
               </div>
             </div>
@@ -185,10 +192,10 @@
                   <div class="card-header container-fluid">
                     <div class="row">
                       <div class="col">
-                        <h3 class="card-title pt-2">Alta de Generaciones</h3>
+                        <h3 class="card-title pt-2">Alta de movilidad acad&eacute;mica</h3>
                       </div>
 
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nueva Generaci&oacute;n</button>
+                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNuevo">Nueva Movilidad</button>
                     </div>
                   </div>
                   <!-- /.card-header -->
@@ -197,7 +204,9 @@
                       <thead>
                         <tr>
                           <th>Programa Acad&eacute;mico</th>
-                          <th>Generaci&oacute;n</th>
+                          <th>Pa&iacute;s</th>
+                          <th>Periodo</th>
+                          <th>Nombre</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
@@ -205,9 +214,11 @@
                       <tbody>
                         <tr>
                           <td>Programa</td>
-                          <td>Generaci&oacute;n 1</td>
+                          <td>Pa&iacute;s 1</td>
+                          <td>Periodo 1</td>
+                          <td>Nombre 1</td>
                           <td>
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalFotos">
                               <i class="nav-icon fas fa-user-plus"></i>
                             </button>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
@@ -222,9 +233,11 @@
 
                         <tr>
                           <td>Programa</td>
-                          <td>Generaci&oacute;n 2</td>
+                          <td>Pa&iacute;s 2</td>
+                          <td>Periodo 2</td>
+                          <td>Nombre 2</td>
                           <td>
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalFotos">
                               <i class="nav-icon fas fa-user-plus"></i>
                             </button>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
@@ -239,9 +252,11 @@
 
                         <tr>
                           <td>Programa</td>
-                          <td>Generaci&oacute;n 3</td>
+                          <td>Pa&iacute;s 3</td>
+                          <td>Periodo 3</td>
+                          <td>Nombre 3</td>
                           <td>
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalFotos">
                               <i class="nav-icon fas fa-user-plus"></i>
                             </button>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
@@ -256,9 +271,11 @@
 
                         <tr>
                           <td>Programa</td>
-                          <td>Generaci&oacute;n 4</td>
+                          <td>Pa&iacute;s 4</td>
+                          <td>Periodo 4</td>
+                          <td>Nombre 4</td>
                           <td>
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalGeneracion">
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalFotos">
                               <i class="nav-icon fas fa-user-plus"></i>
                             </button>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
@@ -306,7 +323,7 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Actualizar Generaci&oacute;n</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Actualizar Movilidad</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -326,27 +343,38 @@
                     <option>5</option>
                   </select>
                 </div>
-              </div>
 
-              <div class="form-row">
-                <div class="form-group col-12">
-                  <label for="projectNameInput">Semestre</label>
-                  <input type="text" class="form-control" placeholder="Formato aaaa-s" />
+                <div class="form-group col-4 offset-2">
+                  <label for="programaControlSelect">Pa&iacute;s</label>
+                  <select class="form-control" id="programaControlSelect">
+                    <option selected>Seleccione</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
                 </div>
               </div>
 
               <div class="form-row">
-                <div class="form-group col-6">
-                  <label for="generacionImageFile">Foto generaci&oacute;n</label>
-                  <figure>
-                    <img id="studentImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
-                  </figure>
-                  
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="generacionImageFile" />
-                    <label class="custom-file-label" for="generacionImageFile">Seleccionar archivo</label>
-                  </div>
+                <div class="form-group col-12">
+                  <label for="projectNameInput">Nombre del alumno</label>
+                  <input type="text" class="form-control" placeholder="Nombre completo del alumno" />
+                </div>
+              </div>
 
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label for="projectNameInput">Nombre de la universidad</label>
+                  <input type="text" class="form-control" placeholder="Nombre completo de la universidad" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-4">
+                  <label for="projectNameInput">Semestre:</label>
+                  <input type="text" class="form-control" placeholder="Formato aaaa-s" />
                 </div>
               </div>
               <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
@@ -362,83 +390,90 @@
     </div>
     <!-- /ModalCrear -->
 
-    <!-- ModalGeneracion -->
-    <div class="modal fade" id="modalGeneracion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- ModalFotos -->
+    <div class="modal fade" id="modalFotos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><strong>Generaci&oacute;n # de #</strong></h5>
+            <h5 class="modal-title" id="exampleModalLabel"><strong>Alta de fotos</strong></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
 
           <div class="modal-body">
-            <div class="card">
-              <div class="card-header container-fluid">
-                <div class="row">
-                  <form class="col-12">
-                    <div class="form-row">
-                      <label for="projectNameInput" class="col-12">Nombre</label>
-                      <div class="form-group col">
-                        <input type="text" class="form-control" placeholder="Digite el nombre completo" />
-                      </div>
-                      <button class="btn btn-warning mb-3">Agregar</button>
-                    </div>
-                  </form>
+            <div class="container">
+              <div class="row">
+                <div class="col-8">
+                  <label for="aaaImageFile">Foto generaci&oacute;n</label>
+                  <figure>
+                    <img id="movilidadImage" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="50%" />
+                  </figure>
+
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="aaaImageFile" />
+                    <label class="custom-file-label" for="aaaImageFile">Seleccionar archivo</label>
+                  </div>
                 </div>
               </div>
 
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="tabla_2" class="table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Acciones</th>
-                    </tr>
-                  </thead>
+              <div class="row">
+                <div class="col">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="row carousel-item active">
+                        <div class="col-8 offset-2 col- d-block">
+                          <figure class="w-100">
+                            <img id="movilidad1-Image" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
+                          </figure>
 
-                  <tbody>
-                    <tr>
-                      <td>Nombre</td>
-                      <td>
-                        <a href="#" class="btn btn-danger">
-                          <i class="nav-icon fas fa-trash"></i>
-                        </a>
-                      </td>
-                    </tr>
+                          <div class="custom-file w-75">
+                            <input type="file" class="custom-file-input" id="bbbImageFile" />
+                            <label class="custom-file-label" for="bbbImageFile">Seleccionar archivo</label>
+                          </div>
+                          <button type="button" class="btn btn-danger" id="deleteMovilidad1">Eliminar</button>
+                        </div>
+                      </div>
 
-                    <tr>
-                      <td>Nombre</td>
-                      <td>
-                        <a href="#" class="btn btn-danger">
-                          <i class="nav-icon fas fa-trash"></i>
-                        </a>
-                      </td>
-                    </tr>
+                      <div class="row carousel-item">
+                        <div class="col-8 offset-2 col- d-block">
+                          <figure class="w-100">
+                            <img id="movilidad2-Image" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
+                          </figure>
 
-                    <tr>
-                      <td>Nombre</td>
-                      <td>
-                        <a href="#" class="btn btn-danger">
-                          <i class="nav-icon fas fa-trash"></i>
-                        </a>
-                      </td>
-                    </tr>
+                          <div class="custom-file w-75">
+                            <input type="file" class="custom-file-input" id="cccImageFile" />
+                            <label class="custom-file-label" for="cccImageFile">Seleccionar archivo</label>
+                          </div>
+                          <button type="button" class="btn btn-danger" id="deleteMovilidad2">Eliminar</button>
+                        </div>
+                      </div>
 
-                    <tr>
-                      <td>Nombre</td>
-                      <td>
-                        <a href="#" class="btn btn-danger">
-                          <i class="nav-icon fas fa-trash"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      <div class="row carousel-item">
+                        <div class="col-8 offset-2 col- d-block">
+                          <figure class="w-100">
+                            <img id="movilidad3-Image" src="https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png" alt="" width="100%" />
+                          </figure>
+
+                          <div class="custom-file w-75">
+                            <input type="file" class="custom-file-input" id="dddImageFile" />
+                            <label class="custom-file-label" for="dddImageFile">Seleccionar archivo</label>
+                          </div>
+                          <button type="button" class="btn btn-danger" id="deleteMovilidad3">Eliminar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <!-- /.card-body -->
             </div>
           </div>
 
@@ -449,19 +484,19 @@
         </div>
       </div>
     </div>
-    <!-- /ModalGeneracion -->
+    <!-- /ModalFotos -->
 
     <!-- ModalDelete -->
     <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Eliminar Generaci&oacute;n</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar Movilidad</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">¿Est&aacute; seguro de eliminar la Generaci&oacute;n?</div>
+          <div class="modal-body">¿Est&aacute; seguro de eliminar el alumno?</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
             <button type="button" class="btn btn-danger">Eliminar</button>
@@ -506,12 +541,57 @@
 
     <!-- Script para mostrar previsualizacion de imagen-->
     <script>
-      $(document).on("change", "#generacionImageFile", function () {
+      $(document).on("change", "#aaaImageFile", function () {
         console.log(this.files);
         var files = this.files;
 
         var imgCodified = URL.createObjectURL(files[0]);
-        $("#studentImage").attr("src", imgCodified);
+        $("#movilidadImage").attr("src", imgCodified);
+      });
+    </script>
+
+    <script>
+      $(document).on("change", "#bbbImageFile", function () {
+        console.log(this.files);
+        var files = this.files;
+
+        var imgCodified = URL.createObjectURL(files[0]);
+        $("#movilidad1-Image").attr("src", imgCodified);
+      });
+
+      //Elimina la previsualizacion
+      $(document).on("click", "#deleteMovilidad1", function (e) {
+        $("#movilidad1-Image").attr("src", "https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png");
+      });
+    </script>
+
+    <script>
+      $(document).on("change", "#cccImageFile", function () {
+        console.log(this.files);
+        var files = this.files;
+
+        var imgCodified = URL.createObjectURL(files[0]);
+        $("#movilidad2-Image").attr("src", imgCodified);
+      });
+
+      //Elimina la previsualizacion
+      $(document).on("click", "#deleteMovilidad2", function (e) {
+        $("#movilidad2-Image").attr("src", "https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png");
+      });
+    </script>
+
+    <script>
+      $(document).on("change", "#dddImageFile", function () {
+        console.log(this.files);
+        var files = this.files;
+
+        var imgCodified = URL.createObjectURL(files[0]);
+        $("#movilidad3-Image").attr("src", imgCodified);
+      });
+
+      //Elimina la previsualizacion
+      $(document).on("click", "#deleteMovilidad3", function (e) {
+        $("#movilidad3-Image").attr("src", "https://www.sinergiamarketingturistico.com/wp-content/uploads/2016/02/no-photo-available.png");
       });
     </script>
 
